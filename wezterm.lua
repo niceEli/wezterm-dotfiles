@@ -55,8 +55,6 @@ config = {
   launch_menu = launch_menu,
 
   set_environment_variables = {
-    WEZTERM_CONFIG = "~/.config/wezterm/wezterm.lua",
-    WEZTERM_FOLDER = "~/.config/wezterm/",
     IS_WEZTERM = "true",
   }
 }

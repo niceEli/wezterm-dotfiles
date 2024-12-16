@@ -5,11 +5,19 @@ table.insert(launch_menu, {
   label = 'nushell',
   args = { 'nu' },
 })
+table.insert(launch_menu, {
+  label = 'nushell (superuser)',
+  args = { 'sudo', 'nu' },
+})
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   table.insert(launch_menu, {
     label = 'PowerShell 7',
     args = { 'pwsh', '-NoLogo' },
+  })
+  table.insert(launch_menu, {
+    label = 'PowerShell 7 (superuser)',
+    args = { 'sudo', 'pwsh', '-NoLogo' },
   })
   table.insert(launch_menu, {
     label = 'PowerShell',
@@ -61,6 +69,10 @@ if wezterm.target_triple ~= "x86_64-pc-windows-msvc" then
   table.insert(launch_menu, {
     label = 'zsh',
     args = { 'zsh' },
+  })
+  table.insert(launch_menu, {
+    label = 'zsh (superuser)',
+    args = { 'sudo', 'zsh' },
   })
   table.insert(launch_menu, {
     label = 'bash',
