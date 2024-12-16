@@ -34,8 +34,8 @@ config = {
   use_resize_increments = true,
 
   -- UI Elements
-  enable_tab_bar = true,
   use_fancy_tab_bar = false,
+  tab_bar_at_bottom = true,
   enable_scroll_bar = true,
 
   -- Visual and sound settings
