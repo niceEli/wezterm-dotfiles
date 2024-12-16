@@ -53,10 +53,6 @@ config = {
   enable_kitty_keyboard = true,
 
   launch_menu = launch_menu,
-
-  set_environment_variables = {
-    IS_WEZTERM = "true",
-  }
 }
 
 return config

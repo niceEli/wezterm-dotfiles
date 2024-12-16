@@ -28,6 +28,16 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
     args = { 'cmd', '/k' },
   })
 
+  -- top
+  table.insert(launch_menu, {
+    label = 'top',
+    args = { 'ntop' }
+  })
+  table.insert(launch_menu, {
+    label = 'btop',
+    args = { 'btop' }
+  })
+
   -- VS22
   table.insert(launch_menu, {
     label = 'Developer PowerShell for VS 2022',
@@ -77,6 +87,16 @@ if wezterm.target_triple ~= "x86_64-pc-windows-msvc" then
   table.insert(launch_menu, {
     label = 'bash',
     args = { 'bash' },
+  })
+
+  -- top
+  table.insert(launch_menu, {
+    label = 'top',
+    args = { 'htop' }
+  })
+  table.insert(launch_menu, {
+    label = 'btop',
+    args = { 'btop' }
   })
 end
 
