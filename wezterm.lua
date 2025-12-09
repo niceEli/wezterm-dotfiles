@@ -44,7 +44,7 @@ config = {
 	-- UI Elements
 	use_fancy_tab_bar = false,
 	tab_bar_at_bottom = true,
-	enable_scroll_bar = true,
+	enable_scroll_bar = false, -- true,
 
 	-- Visual and sound settings
 	color_scheme = "Tokyo Night",
