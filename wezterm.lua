@@ -1,7 +1,7 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 local launch_menu = require("modules/launch_menu")
-
+local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 local config = wezterm.config_builder()
 
 -- MAKE 100% SURE TO MAKE shell_integration.osc133 TO FALSE IN $nu.config-path
@@ -17,7 +17,7 @@ config = {
 		--	weight = "Bold",
 		--},
 		--	{ family = "Terminus", weight = "Bold" },
-		{ family = "JetBrains Mono", weight = 'Bold' },
+		{ family = "JetBrains Mono", weight = "Bold" },
 		"Symbols Nerd Font",
 		"Noto Color Emoji",
 	}),
@@ -47,7 +47,7 @@ config = {
 	enable_scroll_bar = true,
 
 	-- Visual and sound settings
-	color_scheme = "Vice Dark (base16)",
+	color_scheme = "Tokyo Night",
 	colors = {
 		visual_bell = "#202020",
 	},
@@ -61,6 +61,10 @@ config = {
 	enable_kitty_keyboard = true,
 
 	launch_menu = launch_menu,
+
+	use_dead_keys = false,
+	use_ime = false,
 }
+bar.apply_to_config(config)
 
 return config
