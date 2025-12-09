@@ -71,6 +71,8 @@ config = {
 			action = wezterm.action.ToggleFullScreen,
 		},
 	},
+
+	window_close_confirmation = "NeverPrompt",
 }
 bar.apply_to_config(config)
 
