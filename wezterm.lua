@@ -38,7 +38,7 @@ config = {
 		top = 0,
 		bottom = 0,
 	},
-	window_background_opacity = 0.95,
+	-- window_background_opacity = 0.95,
 	use_resize_increments = true,
 
 	-- UI Elements
@@ -64,6 +64,13 @@ config = {
 
 	use_dead_keys = false,
 	use_ime = false,
+
+	keys = {
+		{
+			key = "F11",
+			action = wezterm.action.ToggleFullScreen,
+		},
+	},
 }
 bar.apply_to_config(config)
 
