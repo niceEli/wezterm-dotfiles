@@ -11,16 +11,18 @@ config = {
 	default_prog = { "zsh" },
 
 	-- Font configuration
-	font = wezterm.font_with_fallback({
+	font = wezterm.font_with_fallback {
 		--{
 		--	family = "JetBrainsMono NFM Medium",
 		--	weight = "Bold",
 		--},
 		--	{ family = "Terminus", weight = "Bold" },
-		{ family = "JetBrains Mono", weight = "Bold" },
+		{ family = "Google Sans Code NF Bold", weight = "Bold" },
+		{ family = "Google Sans Code", weight = "Bold" },
+		{ family = "JetBrainsMono NF Medium", weight = "Bold" },
 		"Symbols Nerd Font",
 		"Noto Color Emoji",
-	}),
+	},
 	font_size = 12.0,
 
 	-- Window configuration
