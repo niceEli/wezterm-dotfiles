@@ -70,6 +70,12 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		args = { "ssh", "niceeli@100.82.40.144" },
 	})
 
+	-- SSH (for SashaSen)
+	table.insert(launch_menu, {
+		label = "SashaSen.stream Server",
+		args = { "ssh", "-X", "100.80.63.4" },
+	})
+
 	-- UNIX Dev Stuff
 	table.insert(launch_menu, {
 		label = "Git Bash",
