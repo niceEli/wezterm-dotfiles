@@ -40,7 +40,7 @@ config = {
 		top = 0,
 		bottom = 0,
 	},
-	-- window_background_opacity = 0.95,
+	window_background_opacity = 0.95,
 	use_resize_increments = true,
 
 	-- UI Elements
@@ -72,7 +72,17 @@ config = {
 			key = "F11",
 			action = wezterm.action.ToggleFullScreen,
 		},
+    {
+      key = "h",
+      mods = "CTRL",
+      action = wezterm.action.SendKey {
+        key = "h",
+        mods = "CTRL",
+      },
+    },
 	},
+  send_composed_key_when_left_alt_is_pressed = false,
+  send_composed_key_when_right_alt_is_pressed = false,
 
 	window_close_confirmation = "NeverPrompt",
 }
