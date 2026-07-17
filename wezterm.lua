@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 config = {
 	-- Shell configuration
-	default_prog = { "zsh" },
+	default_prog = { "nu" },
 
 	-- Font configuration
 	font = wezterm.font_with_fallback {
